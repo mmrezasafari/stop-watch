@@ -1,0 +1,143 @@
+html,
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.outer-circle {
+    width: 250px;
+    height: 250px;
+    display: flex;
+    border-radius: 50%;
+    background-color: rgba(255, 0, 0, 0.4);
+    justify-content: center;
+    align-items: center;
+
+}
+
+.inner-circle {
+    width: 235px;
+    height: 235px;
+    display: flex;
+    border-radius: 50%;
+    background-color: black;
+    align-items: center;
+    justify-content: center;
+}
+
+.watch-number {
+    color: white;
+}
+
+#min {
+    font-size: 32px;
+}
+
+#sec {
+    font-size: 26px;
+}
+
+#msec {
+    font-size: 20px;
+}
+
+.button-wrapper {
+    width: 250px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.clock-button {
+    width: 50px;
+    height: 50px;
+    margin-top: 20px;
+    border-radius: 50%;
+    background-color: black;
+    border: 3px solid white;
+    color: white;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 500ms;
+}
+
+.clock-button:hover {
+    background-color: white;
+    color: black;
+}
+
+.laps {
+    width: 250px;
+    height: 250px;
+    position: relative;
+    list-style-type: none;
+    color: white;
+    padding: 0 10px;
+    overflow: auto;
+}
+
+.lap-li {
+    width: 13rem;
+    height: 3rem;
+    display: inline-block;
+    text-align: center;
+    padding: 10px;
+    margin: 10px 0 10px 0;
+    border: 2px solid white;
+    border-radius: 50px;
+}
+
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    background: rgba(255, 0, 0, 0.4);
+}
+
+.lap-clear-button {
+    display: block;
+    position: sticky;
+    z-index: 1000;
+    bottom: 0px;
+    left: 50%;
+    transform: translate(-50%);
+    width: 110px;
+    height: 35px;
+    font-weight: bold;
+    background-color: rgb(255, 255, 255);
+    color: black;
+    border: 1px solid white;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 500ms;
+}
+
+.lap-clear-button:hover {
+    background-color: rgba(255, 0, 0, 0.4);
+    border: 1px solid black;
+    color: white;
+}
+
+.hidden {
+    visibility: hidden;
+}
